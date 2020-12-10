@@ -1,0 +1,28 @@
+@charset "ISO-8859-1";
+.ordersTable {
+	border-collapse: collapse;
+	border: 1px solid #000000;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.ordersTableHeader {
+	text-align: center;
+	background: rgb(255, 255, 0);
+	border-bottom: 1px solid #000000;
+	padding: 2px;
+}
+
+.ordersTableOddRow {
+	text-align: center;
+	background: rgb(242, 230, 111);
+}
+
+.ordersTableEvenRow {
+	text-align: center;
+	background: #D3D3D3;
+}

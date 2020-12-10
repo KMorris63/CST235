@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<!-- Kacey Morris -->
+<!-- December 9, 2020 -->
+<!-- CST 235 REST and Messages -->
+<!-- This is the main page where a user is created. -->
+<!-- This is my own work as influenced by class time and examples. -->
+
+<h:head>
+	<title>JSF Login Page</title>
+</h:head> 
+	<h:body> 
+		<!-- set the layout and title for the login page -->
+		<ui:composition template="/layouts/commonLayout.xhtml">
+		<ui:define name="title">JSF Login Page</ui:define>
+		<ui:define name="content">
+		<div align="center">
+			<h:form>
+				First Name: <h:inputText value ="#{user.firstName}" title="" /><br/>
+				Last Name: <h:inputText value ="#{user.lastName}" title="" /><br/><br/>
+				<h:commandButton action="#{formController.onSubmit(user)}" value="Submit" /><br/> <!-- Managed Bean is a method argument in controller -->
+				<h:messages/>
+			</h:form>
+		</div>
+		</ui:define>
+		</ui:composition>
+	</h:body> 
+</html>
